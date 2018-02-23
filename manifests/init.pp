@@ -56,7 +56,7 @@ class unbound (
   Boolean                                              $use_systemd,                  # version 1.6.1
   Boolean                                              $do_daemonize,
   Optional[Hash[String, Unbound::Access_control]]      $access_control,               # version 1.5.10
-  Optional[Stdlib::Absolutepath]                       $chroot,
+  Optional[Variant[Enum[''],Stdlib::Absolutepath]]     $chroot,
   Optional[String]                                     $username,
   Stdlib::Absolutepath                                 $directory,
   Optional[Stdlib::Absolutepath]                       $logfile,
