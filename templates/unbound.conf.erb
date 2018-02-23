@@ -15,7 +15,9 @@
       return "  #{name}: no\n"
     elsif not value
       return
-    elsif value.is_a?(Integer) or value.is_a?(String)
+    elsif value.is_a?(String)
+      return "  #{name}: \"#{value}\"\n"
+    elsif value.is_a?(Integer)
       return "  #{name}: #{value}\n"
     elsif value.is_a?(Array)
       str = ''
