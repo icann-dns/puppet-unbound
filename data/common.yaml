@@ -54,7 +54,7 @@ unbound::use_systemd: false
 unbound::do_daemonize: false
 unbound::access_control: ~
 unbound::chroot: ~
-unbound::username: ~
+unbound::username: "%{hiera('unbound::owner')}"
 unbound::directory: "%{hiera('unbound::confdir')}"
 unbound::logfile: ~
 unbound::log_identity: ~
