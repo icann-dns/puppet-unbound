@@ -51,7 +51,7 @@ unbound::ssl_service_key: ~
 unbound::ssl_service_pem: ~
 unbound::ssl_port: ~
 unbound::use_systemd: false
-unbound::do_daemonize: false
+unbound::do_daemonize: true
 unbound::access_control: ~
 unbound::chroot: ~
 unbound::username: "%{hiera('unbound::owner')}"
